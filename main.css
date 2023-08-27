@@ -1,0 +1,27 @@
+/* starting CSS*/
+html{
+  
+    padding: auto;
+    margin: auto;
+
+}
+body{
+    background-image: url(photo-1511148957546-1e69aad61e6b.jpeg);
+}  
+div.list{
+    vertical-align: top;
+    padding-left: 700px;
+    margin-left: 700px;
+    text-align: left;
+    height: auto;
+    width: auto;
+    padding-inline: block;
+    
+}
+.list.li{
+    border: solid 7px;
+}
+h1.ali{
+    
+    
+}

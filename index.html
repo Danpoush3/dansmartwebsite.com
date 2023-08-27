@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> www.Dansmart.com</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            list-style: none;
+            text-decoration: none;
+        }
+        body {
+            background-image: url(photo-1511148957546-1e69aad61e6b.jpeg);
+        }
+        button .login-btn {
+            padding-left: 70px;
+        }
+        .menu-bar  {
+             background-image: url(paper-1074131_1280.jpg);
+             background-position: center;
+             background-size: cover;
+            width: 100%;
+            height: 100px;
+            position: fixed;
+            top: 0%;
+            left: 200px;
+            
+
+        }
+        .menu-bar .button {
+              padding-left: 20px;
+              padding-top: 20px;
+              color: aliceblue;
+
+        }
+        .menu-bar .button a:hover {
+            color: red;
+            
+        }
+        
+        .menu-bar nav ul {
+             text-align: right;
+             line-height: 10px;
+             
+             
+            
+             
+       }
+        .menu-bar nav ul .listitems2 {
+             display: inline-block;
+             padding-right: 230px;
+             
+
+       }
+        .menu-bar nav ul .listitems2 a {
+          font-size: 20px;
+          font-weight: 100;
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          font-style: normal;
+          color: rgb(37, 126, 204);
+          transition: transform 2s 1s ease normal;
+          
+        }
+        .menu-bar ul .listitems2 a:hover{
+            background-color: rgb(9, 9, 100);
+            color: red;
+            transform: translateX(-20px);
+        }
+        #slidebar{
+            background-image: url(paper-1074131_1280.jpg);
+            width: 0px;
+            height: 100vh;
+            position: fixed;
+            top: 0%;
+            left: 0%;
+            overflow: hidden;
+            
+            
+            
+        }
+        img{
+            width: 30px;
+            height: 30px;
+            padding-top: 10px;
+            padding-bottom: 20px;
+            display: inline-block;
+        }
+        #slidebar .profile img {
+               width: 70px;
+               height: 70px;
+               padding-left: 70px;
+               padding-top: 10px;
+               padding-bottom: 10px;
+               
+        }
+
+        #slidebar .profile h1{
+               text-align: center;
+               font-size: 20px;
+        }
+        #slidebar .profile p{
+                text-align: center;
+                font-size: 15px;
+        }
+        
+        #slidebar ul li {
+              display: flex;
+              align-items: center;
+              padding-left: 10px;
+        }
+        
+    
+        
+        #slidebar ul li  a{
+        transition: transform  2s 1s normal;
+            font-size: 20px;
+    
+      }
+      #slidebar ul li a:hover{
+           background-color: blue;
+           color: red;
+           transform: translateX(20px);
+      }
+      .listitems2 a:hover{
+          animation: listitems2 1s linear 0s normal none;
+
+      }
+      @keyframes listitems2 {
+        0%{
+          transform: translateX(0px);
+          opacity: 0;
+        }
+        100%{
+            transform: translateX(-20px);
+            opacity: 1;
+
+        }
+      }
+
+      
+      
+
+      .open-slidebar {
+          font-size: 30px;
+          
+      }
+      .open-slidebar{
+        padding-left: 10px;
+        padding-top: 20px;
+        display:block;
+        
+      }
+      #slidebar.close-slidebar{
+          padding-left: 10px;
+          padding-top: 20px;
+          
+
+      }
+     #slidebar .close-slidebar  {
+         font-size: 30px;
+         text-align: right;
+         
+      }
+    
+      .title{
+        padding-bottom: 20px;
+        color: aliceblue;
+      }
+      .title .video {
+        width: 500px;
+         height: 500px; 
+         padding-left:550px;
+          padding-top: 10px;"
+      }
+      .title h1 {
+         text-align: center;
+         top: 20px;
+         
+      }
+    
+       @keyframes h1 {
+         0%{
+            opacity: 0;
+            transform: translateX(0px);
+            transform: scaleX(0);
+         }
+         100%{
+            opacity: 1;
+            transform: translateX(-10px);
+            transform: scaleX(2);
+         }
+       }
+      .title .p1 {
+         text-align: center;
+      }
+      .title h1 .span1 {
+         color: blue;
+         animation: h1 2s linear 1s infinite forwards ;
+      }
+      .title h1 .span2 {
+         color: red;
+         animation: h1 3s ease-in 2s infinite forwards ;
+      }
+      .title h1 .span3 {
+         color: green;
+         animation: h1 4s ease-in 3s infinite forwards ;
+      }
+      .servicecontent{
+        padding-bottom: 20px;
+        padding-top: 10px;
+        background-color: blue;
+         color: aliceblue;
+      }
+      .servicecontent .service {
+        text-align: center;
+         color: red;
+      }
+      .servicecontent p {
+        padding-top: 0%; 
+        text-align: center; 
+        font-size: 20px;
+      }
+      .contactcontent{
+         background-color: rgb(47, 98, 192);
+         color: aliceblue;
+      }
+      .contactcontent .contact {
+        text-align: center;
+         padding-top: 10px;
+          color: red;
+      }
+      .contactcontent .div1 {
+        padding-bottom: 50px;
+         margin: auto;
+          text-align: center;"
+      }
+      .contactcontent .p2 {
+        padding-top: -30px;
+         font-size: 20px;"
+      }
+      .aboutcontent {
+         background-color: darkslateblue;
+         color: aliceblue;
+      }
+    .aboutcontent  .about{
+        text-align: center;
+         color: red;
+      }
+      .aboutcontent .p3 {
+        text-align: center;
+         font-size: 30px;"
+      }
+      
+
+    </style>
+
+</head>
+<body>
+ <section>
+    
+      <div class="menu-bar">
+        <div class="button">
+        <button>
+       <a href="file:///C:/Users/HP%20ELITEBOOK/Documents/newsummaryonhtmlandcss/signup.html"> <h2> Signup</h2></a>
+        </button>
+
+        <button class="login-btn">
+         <a href="file:///C:/Users/HP%20ELITEBOOK/Documents/newsummaryonhtmlandcss/login.html"> <h2> Login  </h2></a>
+        </button>
+        </div>
+    
+        <nav>
+            <ul>
+                <li class="listitems2">
+                    <a href="file:///C:/Users/HP%20ELITEBOOK/Documents/newsummaryonhtmlandcss/homefile.html"> Home</a>
+                </li>
+                <li class="listitems2">
+                <a href="file:///C:/Users/HP%20ELITEBOOK/Documents/newsummaryonhtmlandcss/ourservice.html"> Our Service</a>
+                </li>
+                <li class="listitems2">
+                    <a href="file:///C:/Users/HP%20ELITEBOOK/Documents/newsummaryonhtmlandcss/contactus.html">Contact Us</a>
+                </li>
+                <li class="listitems2">
+                    <a href="file:///C:/Users/HP%20ELITEBOOK/Documents/newsummaryonhtmlandcss/Aboutus.html"> About</a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+      </div>
+       <div id="openmyslidebar" class="open-slidebar">
+        <img src="menu_FILL0_wght400_GRAD0_opsz48.jpg" >
+       </div>
+ 
+       <div id="slidebar">
+        <div id="closemyslidebar" class="close-slidebar">
+            <img src="close_FILL0_wght400_GRAD0_opsz48.jpg" >
+        </div>
+        <div class="profile">
+           <img src="c:\Users\HP ELITEBOOK\Pictures\Saved Pictures\FaceApp_1659596812635 - Copy.jpg" >
+           <h1> Dansmart</h1>
+           <p> A Web Developer</p>
+        </div>
+        
+        <ul>
+            <li class="listitems">
+                <img src="address-building-company-home-house-office-real-estate-icon--10.jpg" >
+                <a href="file:///C:/Users/HP%20ELITEBOOK/Documents/newsummaryonhtmlandcss/homefile.html">Home</a>
+            </li>
+            <li class="listitems">
+                <img src="competence-skill-experience-company-product--16.png">
+                <a href="file:///C:/Users/HP%20ELITEBOOK/Documents/newsummaryonhtmlandcss/ourservice.html">Our Service</a>
+            </li>
+            <li class="listitems">
+                <img src="contact-us-icon-23.jpg " >
+                <a href="file:///C:/Users/HP%20ELITEBOOK/Documents/newsummaryonhtmlandcss/contactus.html">Contact Us</a>
+            </li>
+            <li class="listitems">
+                <img src="about-us-icon-27.jpg">
+                <a href="file:///C:/Users/HP%20ELITEBOOK/Documents/newsummaryonhtmlandcss/Aboutus.html">About Us</a>
+            </li>
+        </ul>
+    
+    </div>
+    </section>
+
+    <section class="title">
+        <video controls class="video" >
+            <source src="InShot_20230419_164437489.mp4" type="video/mp4">
+        </video>
+
+       <h1 class="animate"> <b> <span class="span1">Alitec</span>
+         <span class="span2">Aluminium </span> 
+       <span class="span3"> Fabrication </span></b> </h1> 
+    
+        <div class="p1">
+       <p style="font-size: 23px;"> <b> Welcome To Our Website  </b></p>
+
+       <p style="font-size: 19px;"> How may we help you.</p>
+        </div>
+
+ </section>
+ 
+ <section class="servicecontent">
+
+     <h1  class="service"> Our Service</h1>
+     <p> We do all kinds of Aluminium window such as <br>
+        Sliding windows <img src="sliding 4.jpg" style="height: 20px; width: 20px;" > <br>
+         Casement windows <img src="casement 2.jpg" style="height: 20px; width: 20px;" > <br>
+        Frameless windows etc.  Aluminium Doors , Tiolet Doors and Showcase/Showglass</p> 
+</section>
+ 
+<section class="contactcontent">
+
+    <h1 class="contact"> Contact Us</h1>
+    <div class="div1">
+    <p style="font-size: 20px;"> Contact us on 
+        <img src="facebook-icon--basic-round-social-iconset--s-icons-7.jpeg" style="height: 30px;width: 30px;">
+        <a href="www.facebook/alitecaluminiumfabrication.com"> Facebook</a>
+       <img src="download 33.jpg" style="height: 30px;width: 30px;">
+       <a href="www.whatsapp/09079504245.com"> WhatsApp</a> <br>
+       and also call us with 09079504245
+    </p>
+     <p class="p2">
+            You can reach us at Amato Umuoko Authonomous Community opposite Morise Ibekwa ,<br> Okwelle, Onuimo L.G.A <br>
+            Imo state.
+        </p>
+    </div>
+ </section>
+
+<section class="aboutcontent">
+
+    <h1  class="about"> About Us</h1>
+    <img src="FaceApp_1659596812635 - Copy.jpg" style="width: 100px; height: 80px; text-align: center; padding-left: 730px; margin-left: auto;" > 
+    <p style="padding-left: 730px;"> ALITEC Junior </p>  <br>
+    <p class="p3">
+        Alitec is a great Aluminium Fabricator who has create , <br> design and work a lot of Aluminium windows, Aluminium doors <br>
+         and Showcase/Showglass , He will give you good quotation <br>
+          and make good delievering at appropaite time.
+    </p>
+ </section>
+  <script src="javascript.js"></script>
+</body>
+</html>
